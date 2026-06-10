@@ -27,6 +27,12 @@ La página crecerá con estas secciones (orden tentativo):
 - Blog / Escritura
 - CV / Hoja de vida (con PDF descargable)
 
+## Contenido y voz
+
+`PROFILE.md` es la fuente única de verdad sobre Carlos Patiño. Lee ese archivo antes de escribir cualquier texto del sitio (bio, descripciones, proyectos, secciones). No inventes datos, logros ni tono — tómalos de ahí. Para tareas técnicas (CSS, HTML, git) no es necesario leerlo.
+
+El archivo es local y está en `.gitignore` — nunca se sube al repositorio.
+
 ## Idioma de trabajo
 
 - **Conversación:** español
