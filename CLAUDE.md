@@ -1,0 +1,48 @@
+# CLAUDE.md — mi-tarjeta
+
+## Sobre el proyecto
+
+Página web personal de Carlos Patiño (Músico · Trombonista / Ingeniero Físico).
+Sirve tres propósitos en paralelo: presencia en internet, portafolio, y espacio de aprendizaje de desarrollo web.
+
+Desplegada en GitHub Pages: https://cepatinog.github.io/mi-tarjeta
+
+## Stack actual y evolución prevista
+
+El proyecto crece de forma progresiva. No saltar etapas sin que el usuario lo decida:
+
+1. **Etapa actual:** HTML + CSS puro
+2. **Siguiente:** JavaScript vanilla (interactividad básica)
+3. **Futuro:** Frameworks frontend (evaluar según necesidad)
+4. **Largo plazo:** Funcionalidades con Python (posiblemente un backend ligero)
+
+No proponer tecnologías de etapas superiores hasta que la etapa actual esté consolidada.
+
+## Secciones previstas
+
+La página crecerá con estas secciones (orden tentativo):
+- Tarjeta principal (actual)
+- Proyectos (ingeniería y música)
+- Música / Audio (reproductor, grabaciones, links a plataformas)
+- Blog / Escritura
+- CV / Hoja de vida (con PDF descargable)
+
+## Idioma de trabajo
+
+- **Conversación:** español
+- **Código, variables, funciones:** inglés
+- **Commits:** inglés, formato imperativo (`Add hero section`, `Fix nav alignment`)
+- **Comentarios en código:** solo cuando el porqué no es obvio; en inglés
+
+## Restricciones — nunca sin permiso explícito
+
+- **No hacer `git push`** bajo ninguna circunstancia sin que el usuario lo pida en ese momento
+- **No instalar dependencias** (npm, pip, etc.) sin aprobación previa del usuario
+- **No crear ni modificar archivos fuera de la carpeta del proyecto**
+- **No cambiar el diseño visual** de forma significativa sin consultarlo primero
+
+## Flujo de trabajo esperado
+
+1. Explicar el enfoque antes de implementar si el cambio es no trivial
+2. El usuario revisa los archivos modificados antes de commitear
+3. El usuario decide cuándo y qué se sube a GitHub
