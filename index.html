@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos Patiño</title>
+  <title>Carlos E. Patiño Gómez</title>
   <meta name="description" content="Trombonista principal de la Orquesta Departamental de Antioquia, Ingeniero Físico con Máster en Interpretación de la Música Clásica y Contemporánea por el Liceu de Barcelona.">
   <meta property="og:title" content="Carlos Patiño">
   <meta property="og:description" content="Trombonista principal de la Orquesta Departamental de Antioquia, Ingeniero Físico con Máster en Interpretación de la Música Clásica y Contemporánea por el Liceu de Barcelona.">
@@ -14,13 +14,90 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main class="card">
-    <img class="avatar" src="assets/images/foto.jpg" alt="Carlos Patiño">
-    <h1>Carlos Patiño</h1>
-    <p class="role">Músico · Trombonista &nbsp;/&nbsp; Ingeniero Físico</p>
-    <p class="bio">Trombonista principal de la Orquesta Departamental de Antioquia · Investigador en música e inteligencia artificial.</p>
-    <p class="location">📍 Medellín, Colombia 🇨🇴</p>
-    <div class="links">
+
+  <header class="site-header">
+    <a href="#hero" class="nav-logo">CP</a>
+    <nav class="nav-links">
+      <a href="#hero">Inicio</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="section-hero">
+    <div class="hero-text">
+      <h1>Carlos Patiño</h1>
+      <p class="hero-tagline">Trombonista · Ingeniero Físico · Investigador · Docente</p>
+      <p class="hero-location">Medellín, Colombia</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-secondary">Contacto</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/images/foto.jpg" alt="Carlos Patiño">
+    </div>
+  </section>
+
+  <section id="about" class="section-about">
+    <span class="section-label">Sobre mí</span>
+    <p class="about-bio">Carlos Patiño Gómez es trombonista principal de la Orquesta Departamental de Antioquia (ODA) y un músico-investigador con formación dual en interpretación e ingeniería. Egresado de Música – Trombón de la Universidad de Antioquia y de Ingeniería Física de la Universidad Nacional de Colombia, completó un Máster en Interpretación de la Música Clásica y Contemporánea en el Conservatori del Liceu (Barcelona) y actualmente cursa el Máster en Tecnologías del Sonido y la Música en la Universitat Pompeu Fabra – Music Technology Group. Más de quince años de trayectoria orquestal en escenarios como el Festival de Bregenz, el Rheingau Musikfestival, el Teatro del Lago, la Halle 53 de Winterthur, L'Auditori de Barcelona y el Conservatorio Tchaikovsky de Moscú. Su trabajo articula interpretación de alto nivel, pedagogía, gestión cultural y desarrollo de herramientas tecnológicas para la música.</p>
+    <div class="about-stats">
+      <div class="stat">
+        <h3>Formación</h3>
+        <ul class="formation-list">
+          <li>Maestro en Música – Trombón · Universidad de Antioquia</li>
+          <li>Ingeniero Físico · Universidad Nacional de Colombia</li>
+          <li>Máster en Interpretación Musical · Conservatori del Liceu, Barcelona</li>
+          <li>Máster Sound and Music Computing · UPF (en curso)</li>
+        </ul>
+      </div>
+      <div class="stat">
+        <h3>Trayectoria internacional</h3>
+        <p>Festival de Bregenz · Rheingau Musikfestival · Teatro del Lago (Chile) · Halle 53, Winterthur · L'Auditori de Barcelona · Conservatorio Tchaikovsky de Moscú.</p>
+      </div>
+      <div class="stat">
+        <h3>Gestión cultural</h3>
+        <p>Simposio Internacional de Trombón — 60+ participantes de 5 países. Colectivo Colombiano de Trombones — ganador convocatoria Jóvenes en Movimiento, Ministerio de Cultura 2022.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-projects">
+    <span class="section-label">Proyectos</span>
+    <div class="projects-grid">
+      <article class="project-card">
+        <span class="project-tag">Orquestal</span>
+        <h3>Orquesta Departamental de Antioquia</h3>
+        <p class="project-role">Trombonista Principal · desde julio 2025</p>
+        <p>Liderazgo de la fila de trombones y el ensamble de metales. Miembro del comité artístico y equipo de comunicaciones de la orquesta.</p>
+      </article>
+      <article class="project-card">
+        <span class="project-tag">Gestión</span>
+        <h3>Simposio Internacional de Trombón</h3>
+        <p class="project-role">Co-creador y organizador · desde 2023</p>
+        <p>Evento académico de la Universidad de Antioquia con más de 60 participantes de 5 países por edición. Clases magistrales, concurso, recitales y conferencias.</p>
+      </article>
+      <article class="project-card">
+        <span class="project-tag">Investigación</span>
+        <h3>Music Technology Group · UPF</h3>
+        <p class="project-role">Investigador · 2024 – actualidad</p>
+        <p>Estimación armónica en músicas andinas colombianas desde perspectivas computacional y etnomusicológica. Creatividad computacional con transformers (JamFormer).</p>
+      </article>
+      <article class="project-card">
+        <span class="project-tag">Cámara</span>
+        <h3>Colectivo Colombiano de Trombones</h3>
+        <p class="project-role">Representante legal · 2022</p>
+        <p>Proyecto ganador de la convocatoria Jóvenes en Movimiento 2022 del Ministerio de Cultura. 11 trombonistas de 6 departamentos de Colombia.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section-contact">
+    <span class="section-label">Contacto</span>
+    <p class="contact-intro">¿Tienes un proyecto en mente, una invitación o una pregunta? Escríbeme.</p>
+    <div class="contact-links">
       <a href="https://github.com/cepatinog" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
@@ -39,9 +116,14 @@
       </a>
       <a href="mailto:cepatinog@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        Contacto
+        Correo
       </a>
     </div>
-  </main>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Carlos Patiño · Medellín, Colombia</p>
+  </footer>
+
 </body>
 </html>

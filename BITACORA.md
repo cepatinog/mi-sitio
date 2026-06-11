@@ -1,6 +1,6 @@
 # Bitácora — mi-sitio
 
-Documento de aprendizaje personal. Registra el proceso de construir este sitio web desde cero, incluyendo decisiones, dudas, herramientas y razonamiento detrás de cada etapa. Escrito para el yo del futuro — y para cualquier persona que encuentre útil leer un proceso real, no idealizado.
+Documento de aprendizaje personal. Registra el proceso de construir este sitio web desde cero, incluyendo decisiones, dudas, herramientas y razonamiento detrás de cada etapa. Escrito para el yo del futuro — y para cualquier persona que encuentre útil leer un proceso real.
 
 Cada sesión de trabajo tiene su propio archivo en la carpeta [`bitacoras/`](bitacoras/).
 
@@ -13,6 +13,7 @@ Cada sesión de trabajo tiene su propio archivo en la carpeta [`bitacoras/`](bit
 | [Sesión 1](bitacoras/sesion-01.md) | 2026-06-10 | Inicio del proyecto, git, GitHub Pages, foto, PROFILE.md, CLAUDE.md |
 | [Sesión 2](bitacoras/sesion-02.md) | 2026-06-10 | Bio, íconos SVG, mejoras visuales, Instagram y YouTube |
 | [Sesión 3](bitacoras/sesion-03.md) | 2026-06-11 | Carpeta assets/, variables CSS, favicon, Open Graph, renombre a mi-sitio |
+| [Sesión 4](bitacoras/sesion-04.md) | 2026-06-11 | Rediseño completo: de tarjeta a sitio web con hero, about, proyectos y contacto |
 
 ---
 
