@@ -294,6 +294,44 @@ section {
   line-height: 1.65;
 }
 
+/* === TEACHING === */
+
+.section-teaching {
+  border-top: 1px solid var(--color-border);
+}
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.teaching-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: border-color 0.2s;
+}
+
+.teaching-card:hover {
+  border-color: var(--color-accent);
+}
+
+.teaching-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-head);
+  line-height: 1.3;
+  margin-bottom: 0.6rem;
+}
+
+.teaching-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-mid);
+  line-height: 1.65;
+}
+
 /* === CONTACT === */
 
 .section-contact {
