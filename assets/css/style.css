@@ -236,6 +236,73 @@ section {
   top: 0.15em;
 }
 
+/* === TIMELINE === */
+
+.section-timeline {
+  border-top: 1px solid var(--color-border);
+}
+
+.timeline {
+  list-style: none;
+  position: relative;
+  max-width: 720px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0.5em;
+  bottom: 0.5em;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-bg);
+}
+
+.timeline-year {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-head);
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item p {
+  font-size: 0.875rem;
+  color: var(--color-text-mid);
+  line-height: 1.6;
+}
+
 /* === PROJECTS === */
 
 .section-projects {
@@ -492,6 +559,17 @@ section {
   }
 
   .nav-links {
-    gap: 1.25rem;
+    gap: 1rem;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex-shrink: 0;
   }
 }
