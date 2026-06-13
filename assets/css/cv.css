@@ -1,0 +1,326 @@
+:root {
+  --cv-page:        #ffffff;
+  --cv-sidebar:     #eef2f8;
+  --cv-ink:         #1f2937;
+  --cv-muted:       #5b6472;
+  --cv-soft:        #8a93a3;
+  --cv-accent:      #2e5b9e;
+  --cv-line:        #dde3ec;
+  --cv-head:        #16233a;
+  --cv-canvas:      #d7dce4;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--cv-canvas);
+  color: var(--cv-ink);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.55;
+  padding: 1.5rem;
+}
+
+/* === TOOLBAR (no se imprime) === */
+
+.cv-toolbar {
+  max-width: 900px;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-back {
+  color: var(--cv-head);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background: var(--cv-page);
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.cv-back:hover { color: var(--cv-accent); }
+
+.cv-hint {
+  font-size: 0.75rem;
+  color: var(--cv-muted);
+}
+
+/* === PAGE (hoja) === */
+
+.cv-page {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--cv-page);
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* === SIDEBAR === */
+
+.cv-sidebar {
+  background: var(--cv-sidebar);
+  padding: 2rem 1.6rem;
+}
+
+.cv-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.75rem;
+  border: 3px solid var(--cv-page);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cv-block { margin-bottom: 1.6rem; }
+
+.cv-sidebar h2 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cv-accent);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 1px solid var(--cv-line);
+}
+
+.cv-sidebar ul { list-style: none; }
+
+.cv-sidebar a {
+  color: var(--cv-ink);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.cv-sidebar a:hover { color: var(--cv-accent); }
+
+.cv-contact li,
+.cv-links li {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: var(--cv-muted);
+}
+
+.cv-edu li { margin-bottom: 0.8rem; }
+
+.cv-edu strong {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cv-head);
+  line-height: 1.35;
+}
+
+.cv-edu span {
+  font-size: 0.75rem;
+  color: var(--cv-soft);
+}
+
+.cv-skills li {
+  font-size: 0.8rem;
+  color: var(--cv-muted);
+  padding-left: 0.9rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.cv-skills li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--cv-accent);
+}
+
+.cv-langs li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--cv-head);
+  margin-bottom: 0.35rem;
+}
+
+.cv-langs span { color: var(--cv-soft); }
+
+.cv-awards li {
+  font-size: 0.78rem;
+  color: var(--cv-muted);
+  margin-bottom: 0.55rem;
+  line-height: 1.4;
+}
+
+.cv-awards span {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--cv-accent);
+  margin-right: 0.35rem;
+}
+
+/* === MAIN === */
+
+.cv-main { padding: 2.25rem 2.25rem 2.5rem; }
+
+.cv-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--cv-head);
+}
+
+.cv-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--cv-head);
+  line-height: 1.1;
+}
+
+.cv-role {
+  font-size: 0.9rem;
+  color: var(--cv-accent);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-top: 0.35rem;
+}
+
+.cv-main h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cv-accent);
+  margin-bottom: 1rem;
+}
+
+.cv-main .cv-block { margin-bottom: 1.9rem; }
+
+.cv-main p { font-size: 0.875rem; color: var(--cv-muted); }
+
+.cv-job {
+  margin-bottom: 1.25rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--cv-line);
+}
+
+.cv-job:last-child { margin-bottom: 0; }
+
+.cv-job-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cv-job-head h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cv-head);
+}
+
+.cv-job-date {
+  font-size: 0.75rem;
+  color: var(--cv-soft);
+  white-space: nowrap;
+}
+
+.cv-job-org {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--cv-muted);
+  margin: 0.1rem 0 0.5rem;
+}
+
+.cv-job ul { padding-left: 1.1rem; }
+
+.cv-job li {
+  font-size: 0.83rem;
+  color: var(--cv-muted);
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.cv-note {
+  font-size: 0.83rem;
+  color: var(--cv-muted);
+  line-height: 1.55;
+  padding-top: 0.5rem;
+}
+
+.cv-talks { list-style: none; }
+
+.cv-talks li {
+  font-size: 0.83rem;
+  color: var(--cv-muted);
+  line-height: 1.5;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--cv-line);
+  margin-bottom: 0.7rem;
+}
+
+.cv-talks li:last-child { margin-bottom: 0; }
+
+.cv-talks strong { color: var(--cv-head); font-weight: 600; }
+
+/* === RESPONSIVE === */
+
+@media (max-width: 680px) {
+  body { padding: 0.75rem; }
+
+  .cv-page { grid-template-columns: 1fr; }
+
+  .cv-main { padding: 1.75rem 1.5rem; }
+}
+
+/* === PRINT (Guardar como PDF) === */
+
+@media print {
+  @page { margin: 11mm; }
+
+  body { background: #fff; padding: 0; }
+
+  .cv-toolbar { display: none; }
+
+  .cv-page {
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cv-sidebar { padding: 1rem 0.95rem; }
+  .cv-main { padding: 1rem 1.25rem; }
+
+  .cv-photo { width: 105px; height: 105px; margin-bottom: 1rem; }
+
+  .cv-header { margin-bottom: 0.8rem; padding-bottom: 0.6rem; }
+  .cv-header h1 { font-size: 1.55rem; }
+
+  .cv-block { margin-bottom: 0.85rem; }
+  .cv-main .cv-block { margin-bottom: 1rem; }
+  .cv-main h2 { margin-bottom: 0.55rem; }
+
+  .cv-job { margin-bottom: 0.55rem; break-inside: avoid; }
+  .cv-job ul { padding-left: 1rem; }
+  .cv-job li { margin-bottom: 0.12rem; line-height: 1.38; }
+  .cv-job-org { margin: 0.05rem 0 0.35rem; }
+
+  .cv-main p,
+  .cv-job li,
+  .cv-job-org,
+  .cv-talks li { font-size: 0.78rem; }
+
+  .cv-talks li { margin-bottom: 0.45rem; }
+
+  .cv-block:last-child { margin-bottom: 0; }
+}
