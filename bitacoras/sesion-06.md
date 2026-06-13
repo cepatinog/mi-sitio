@@ -90,18 +90,46 @@ contenido real.
 
 ---
 
+### Etapa 30 — Timeline de trayectoria, menú móvil con scroll y PDFs fuente ignorados
+
+Nueva sección `#timeline` entre "Sobre mí" y "Proyectos": ocho hitos en orden
+descendente (2025 → 2012), elegidos junto con el usuario. Es una línea de tiempo
+vertical en **CSS puro**: una línea con `::before` sobre el `<ol>` y un punto de acento
+con `::before` en cada `<li>`. Se usó `<ol>` por tratarse semánticamente de una secuencia
+ordenada.
+
+**Menú móvil sin JavaScript.** Con el séptimo enlace ("Trayectoria"), el menú dejaba de
+caber en pantallas estrechas. En vez de introducir JS para un menú hamburguesa, se resolvió
+en CSS: en el breakpoint móvil el `.nav-links` hace `overflow-x: auto` con la barra de
+scroll oculta y los enlaces con `flex-shrink: 0`, de modo que se deslizan horizontalmente.
+
+**Fechas verificadas contra el CV.** Al contrastar el timeline con la hoja de vida más
+reciente se detectó que la participación en los festivales de Bregenz y Rheingau era de
+**2023**, no de 2018 como figuraba en notas anteriores. Se corrigió.
+
+> **Principio aprendido:** cuando dos fuentes discrepan (notas previas vs. la HV
+> actualizada), el documento más reciente y autoritativo manda. Conviene cotejar las fechas
+> contra él antes de publicar.
+
+**Documentos fuente fuera del repositorio.** El CV y el portafolio en PDF contienen datos
+personales (cédula, dirección, teléfono), así que se ignoran en `.gitignore` con `/*.pdf`
+—igual que `PROFILE.md`— para que ningún PDF de la raíz se suba a un repositorio público.
+
+---
+
 ### Estado al cierre de sesión 6
 
 - [x] Sección Docencia (6 áreas)
 - [x] Sección Media (11 videos en 3 bloques, embeds diferidos)
 - [x] Embeds verificados contra la API oEmbed; textos alineados al contenido real
-- [x] Aprendido el flujo de previsualización por HTTP para evitar el Error 153
+- [x] Sección Timeline (8 hitos, CSS puro), fechas cotejadas con el CV
+- [x] Menú con scroll horizontal en móvil, sin salir de la etapa 1 (HTML/CSS)
+- [x] PDFs fuente (CV, portafolio) ignorados en `.gitignore`
 
 ### Próximas etapas
 
-- [ ] **Timeline** de trayectoria orquestal e internacional (será el 7º enlace del menú)
-- [ ] **CV / portafolio descargable** en PDF
+- [ ] **CV navegable en HTML** como página aparte, partiendo de dos versiones del CV
+- [ ] Decidir cómo exponer el CV sin publicar datos personales
 
-> Punto de decisión que se acerca: con un 7º enlace, el menú dejará de caber cómodamente
-> en móvil. Ese será el momento de introducir **JavaScript** (menú hamburguesa) y dar el
-> salto a la etapa 2 del proyecto.
+> El menú móvil se resolvió con CSS; el salto a JavaScript (etapa 2) queda pendiente para
+> cuando una funcionalidad lo requiera de verdad.
