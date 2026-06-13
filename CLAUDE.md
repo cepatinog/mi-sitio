@@ -1,11 +1,11 @@
-# CLAUDE.md — mi-tarjeta
+# CLAUDE.md — mi-sitio
 
 ## Sobre el proyecto
 
 Página web personal de Carlos Patiño (Músico · Trombonista / Ingeniero Físico).
 Sirve tres propósitos en paralelo: presencia en internet, portafolio, y espacio de aprendizaje de desarrollo web.
 
-Desplegada en GitHub Pages: https://cepatinog.github.io/mi-tarjeta
+Desplegada en GitHub Pages: https://cepatinog.github.io/mi-sitio
 
 ## Stack actual y evolución prevista
 

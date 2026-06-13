@@ -14,6 +14,7 @@ Cada sesión de trabajo tiene su propio archivo en la carpeta [`bitacoras/`](bit
 | [Sesión 2](bitacoras/sesion-02.md) | 2026-06-10 | Bio, íconos SVG, mejoras visuales, Instagram y YouTube |
 | [Sesión 3](bitacoras/sesion-03.md) | 2026-06-11 | Carpeta assets/, variables CSS, favicon, Open Graph, renombre a mi-sitio |
 | [Sesión 4](bitacoras/sesion-04.md) | 2026-06-11 | Rediseño completo: de tarjeta a sitio web con hero, about, proyectos y contacto |
+| [Sesión 5](bitacoras/sesion-05.md) | 2026-06-13 | Pulido de la base: scroll suave + scroll-padding, grid auto-fit, corrección de docs |
 
 ---
 
