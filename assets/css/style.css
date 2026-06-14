@@ -253,9 +253,10 @@ section {
 }
 
 .hero-photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 260px;
+  max-width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 40px;
   object-fit: cover;
   display: block;
   outline: 3px solid var(--color-border);
