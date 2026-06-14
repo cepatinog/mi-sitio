@@ -18,8 +18,11 @@ assets/
   js/main.js          JavaScript del sitio (menú hamburguesa, scrollspy)
   images/foto.jpg     Retrato principal
 bitacoras/            Una bitácora por sesión (sesion-NN.md)
+README.md             Presentación pública del proyecto
 BITACORA.md           Índice de bitácoras
-PROFILE.md            Fuente de verdad del contenido (local, en .gitignore)
+_local/               Archivos locales, no se publican (en .gitignore)
+  PROFILE.md          Fuente de verdad del contenido
+  *.pdf               Documentos fuente (CV, hoja de vida, portafolio)
 ```
 
 Secciones actuales de `index.html`: hero, about, timeline, projects, teaching, media, contact.
@@ -61,14 +64,14 @@ En GitHub Pages funcionan sin problema.
 
 ## Contenido y voz
 
-`PROFILE.md` es la **fuente única de verdad** sobre Carlos Patiño. Léelo antes de escribir cualquier
-texto del sitio (bio, descripciones, proyectos, secciones). No inventes datos, logros ni fechas —
-tómalos de ahí. Para tareas técnicas (CSS, HTML, JS, git) no es necesario.
+`_local/PROFILE.md` es la **fuente única de verdad** sobre Carlos Patiño. Léelo antes de escribir
+cualquier texto del sitio (bio, descripciones, proyectos, secciones). No inventes datos, logros ni
+fechas — tómalos de ahí. Para tareas técnicas (CSS, HTML, JS, git) no es necesario.
 
 - **Tono de marca** (PROFILE §15): directo, honesto, sin marketing inflado; datos verificables sobre
   afirmaciones genéricas.
-- Documentos fuente adicionales (CV y portafolio en PDF) son **locales**: contienen datos personales
-  y están ignorados (`/*.pdf` en `.gitignore`). Nunca se publican.
+- Documentos fuente adicionales (CV y portafolio en PDF) viven en `_local/`: contienen datos
+  personales y están ignorados (`_local/` en `.gitignore`). Nunca se publican.
 
 ## Idioma de trabajo
 

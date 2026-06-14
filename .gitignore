@@ -1,4 +1,6 @@
-PROFILE.md
+# Archivos locales: datos personales y documentos fuente. No se publican.
+_local/
 
-# Documentos fuente locales — contienen datos personales, no se publican
+# Salvaguardas por si algún archivo personal queda en la raíz
 /*.pdf
+PROFILE.md
