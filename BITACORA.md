@@ -18,6 +18,7 @@ Cada sesión de trabajo tiene su propio archivo en la carpeta [`bitacoras/`](bit
 | [Sesión 6](bitacoras/sesion-06.md) | 2026-06-13 | Parte B: secciones Docencia y Media, embeds diferidos, Error 153 y verificación de IDs |
 | [Sesión 7](bitacoras/sesion-07.md) | 2026-06-13 | Salto a JavaScript (etapa 2): menú hamburguesa accesible, scrollspy y CV en el nav |
 | [Sesión 8](bitacoras/sesion-08.md) | 2026-06-13 | Cierre del menú (Escape/clic fuera) y modo claro/oscuro con persistencia |
+| [Sesión 9](bitacoras/sesion-09.md) | 2026-06-13 | README, limpieza de la raíz (`_local/`) y crecimiento del portafolio (demos, paper, JamFormer) |
 
 ---
 

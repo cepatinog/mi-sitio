@@ -447,10 +447,27 @@ section {
   letter-spacing: 0.1px;
 }
 
-.project-card p:last-child {
+.project-card p:not(.project-role) {
   font-size: 0.875rem;
   color: var(--color-text-mid);
   line-height: 1.65;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-link + .project-link {
+  margin-left: 1.25rem;
 }
 
 /* === TEACHING === */
