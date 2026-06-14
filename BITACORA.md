@@ -19,6 +19,7 @@ Cada sesión de trabajo tiene su propio archivo en la carpeta [`bitacoras/`](bit
 | [Sesión 7](bitacoras/sesion-07.md) | 2026-06-13 | Salto a JavaScript (etapa 2): menú hamburguesa accesible, scrollspy y CV en el nav |
 | [Sesión 8](bitacoras/sesion-08.md) | 2026-06-13 | Cierre del menú (Escape/clic fuera) y modo claro/oscuro con persistencia |
 | [Sesión 9](bitacoras/sesion-09.md) | 2026-06-13 | README, limpieza de la raíz (`_local/`) y crecimiento del portafolio (demos, paper, JamFormer) |
+| [Sesión 10](bitacoras/sesion-10.md) | 2026-06-13 | Optimización: de-duplicación de contenido y jerarquía (clústeres de proyectos + tarjetas destacadas) |
 
 ---
 
